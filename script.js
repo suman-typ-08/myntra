@@ -143,9 +143,12 @@ home.addEventListener("mouseover", () => {
         displaymenu.innerHTML = ``
     })
 })
-document.body.addEventListener("click",()=>{
-    displaymenu.innerHTML=""
-})
+document.body.addEventListener("click", (e) => {
+  // if click is outside nav or menu, then close
+  if (!e.target.closest("nav") && !e.target.closest(".menu")) {
+    displaymenu.innerHTML = "";
+  }
+});
 
 
 const loginBox = document.getElementById("loginBox");
