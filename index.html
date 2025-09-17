@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="https://aartisto.com/wp-content/uploads/2020/11/myntra.png" alt="logo" class="logo">
+        </div>
+        <div class="right">
+            <ul class="allLinks">
+                <li id="men">Mens</li>
+                <li id="women">Women</li>
+                <li id="kids">Kid</li>
+                <li id="home">Home</li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="" placeholder="search Somethings . .">
+                </li>
+                <li id="profile"><i class="fa-solid fa-user"></i></li>
+                <li id="cart"><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div id="displaymenu"></div>
+<!-- <div id="profileCnt">
+    <i class="fa-solid fa-xmark"  id="profile_close"></i>
+    <h3>Login Form</h3>
+    <form action="">
+        <input type="text" placeholder="enter user name">
+        <input type="password" placeholder="enter password">
+        <button>Login</button>
+    </form>
+    <p>don't have any acccount <span>click</span> here to Register</p>
+</div> -->
+
+  <button id="profile">Login</button> <!-- Trigger -->
+
+<div id="profileCnt">
+  <i class="fa-solid fa-xmark" id="profile_close"></i>
+
+  <!-- Login Box -->
+  <div id="loginBox">
+    <h3>Login Form</h3>
+    <form>
+      <input type="text" placeholder="Enter username">
+      <input type="password" placeholder="Enter password">
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have any account? <span id="openRegister">Click</span> here to Register</p>
+  </div>
+
+  <!-- Register Box -->
+  <div id="registerBox" style="display: none;">
+    <h3>Register Form</h3>
+    <form>
+      <input type="text" placeholder="Enter username">
+      <input type="email" placeholder="Enter email">
+      <input type="password" placeholder="Enter password">
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <span id="openLogin">Click</span> here to Login</p>
+  </div>
+</div>
+
+    <nav>
+        <ul class="allLinkMob">
+                <li id="men">Mens</li>
+                <li id="women">Women</li>
+                <li id="kids">Kid</li>
+                <li id="home">Home</li>
+                <li>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="" placeholder="search Somethings . .">
+                </li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+    </nav>
+    <section class="banner">
+        <img src="https://www.hindustantimes.com/ht-img/img/2024/09/19/1600x900/aso_banner_1920x1080_1726736708372_1726736724510.png" alt="">
+    </section>
+    <main>
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/028/535/150/non_2x/a-myriad-of-vibrant-toys-carefully-curated-and-proudly-displayed-generative-ai-photo.jpg" alt="">
+            <h5>Toy</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, impedit?</p>
+            <div>
+                <button>add to cart</button>
+                <p>₹ 10000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/028/535/150/non_2x/a-myriad-of-vibrant-toys-carefully-curated-and-proudly-displayed-generative-ai-photo.jpg" alt="">
+            <h5>Toy</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, impedit?</p>
+            <div>
+                <button>add to cart</button>
+                <p>₹ 10000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/028/535/150/non_2x/a-myriad-of-vibrant-toys-carefully-curated-and-proudly-displayed-generative-ai-photo.jpg" alt="">
+            <h5>Toy</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, impedit?</p>
+            <div>
+                <button>add to cart</button>
+                <p>₹ 10000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/028/535/150/non_2x/a-myriad-of-vibrant-toys-carefully-curated-and-proudly-displayed-generative-ai-photo.jpg" alt="">
+            <h5>Toy</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, impedit?</p>
+            <div>
+                <button>add to cart</button>
+                <p>₹ 10000</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+     <div class="footer_up">
+           <div class="footer_card">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>About</li>
+                <li>career</li>
+                <li>Our Blog</li>
+                <li>News letter</li>
+            </ul>
+        </div>
+        <div class="footer_card">
+                <h3>Group of Companies</h3>
+            <ul>
+                <li>Flipkart</li>
+                <li>Myntra</li>
+                <li>Amazon</li>
+            </ul>
+        </div>
+        <div class="footer_card">
+                   <h3>Register office Address</h3>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis ipsum provident.</p>
+           <p><a href="tel:8956857569"> call : 8956857569</a></p>
+        </div>
+        <div class="footer_card">
+            <h3>Social :</h3>
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </p>
+        </div>
+     </div>
+     <div class="footer_down">
+        <hr>
+        <p>Made with ❤️ in India <sup>&reg;</sup></p>
+     </div>
+       
+    </footer>
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/025/271/430/small_2x/robot-chatbot-generative-ai-free-png.png" alt="" class="chatbot" id="bot">
+  
+  <div class="messgeBoxCnt" id="msgBox">
+    <div class="up">
+      <div class="">
+          <i class="fa-solid fa-headset"></i>
+      <p>  Ask Eva</p>
+      </div>
+      <i class="fa-solid fa-xmark" id="close"></i>
+    </div>
+    <div class="middle"></div>
+    <div class="down">
+        <input type="text" placeholder="type somethings">
+        <i class="fa-solid fa-paper-plane"></i>
+    </div>
+  </div>
+
+
+
+<script src="./script.js"></script>
+
+<script>
+   let bot =    document.getElementById("bot")
+   let msgBox =    document.getElementById("msgBox")
+   let close =    document.getElementById("close")
+   bot.addEventListener("click",()=>{
+    msgBox.style.display = "block"
+   })
+   close.addEventListener("click",()=>{
+    msgBox.style.display = "none"
+   })
+</script>
+
+</body>
+</html>

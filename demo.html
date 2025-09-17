@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="profile">Login</button> <!-- Trigger -->
+
+<div id="profileCnt">
+  <i class="fa-solid fa-xmark" id="profile_close"></i>
+
+  <!-- Login Box -->
+  <div id="loginBox">
+    <h3>Login Form</h3>
+    <form>
+      <input type="text" placeholder="Enter username">
+      <input type="password" placeholder="Enter password">
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have any account? <span id="openRegister">Click</span> here to Register</p>
+  </div>
+
+  <!-- Register Box -->
+  <div id="registerBox" style="display: none;">
+    <h3>Register Form</h3>
+    <form>
+      <input type="text" placeholder="Enter username">
+      <input type="email" placeholder="Enter email">
+      <input type="password" placeholder="Enter password">
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <span id="openLogin">Click</span> here to Login</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+<script>
+    const profile = document.getElementById("profile");
+const profileCnt = document.getElementById("profileCnt");
+const profile_close = document.getElementById("profile_close");
+
+const loginBox = document.getElementById("loginBox");
+const registerBox = document.getElementById("registerBox");
+
+const openRegister = document.getElementById("openRegister");
+const openLogin = document.getElementById("openLogin");
+
+profile.addEventListener("click", () => {
+  profileCnt.style.display = "block";
+});
+
+profile_close.addEventListener("click", () => {
+  profileCnt.style.display = "none";
+});
+
+// Switch to Register
+openRegister.addEventListener("click", () => {
+  loginBox.style.display = "none";
+  registerBox.style.display = "block";
+});
+
+// Switch back to Login
+openLogin.addEventListener("click", () => {
+  registerBox.style.display = "none";
+  loginBox.style.display = "block";
+});
+
+</script>
+</body>
+</html>
